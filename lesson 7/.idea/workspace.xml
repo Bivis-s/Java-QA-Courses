@@ -19,16 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ca0fc15-87e7-4225-bc09-dceb809beaa7" name="Default Changelist" comment="" />
+    <list default="true" id="4a0eb67b-8914-4990-acea-1f2347ce230c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1j9OAmcynmtGSQO6FMwNrOGMr3E" />
+  <component name="ProjectId" id="1j9VvQZZec2ZNuuNR3IVFjCwQbS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,15 +44,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson 7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework.Run" />
-      <module name="lesson5-6" />
+      <option name="MAIN_CLASS_NAME" value="man.Run" />
+      <module name="lesson 7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework.*" />
+          <option name="PATTERN" value="man.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,11 +69,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1ca0fc15-87e7-4225-bc09-dceb809beaa7" name="Default Changelist" comment="" />
-      <created>1603212700264</created>
+      <changelist id="4a0eb67b-8914-4990-acea-1f2347ce230c" name="Default Changelist" comment="" />
+      <created>1603216527709</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603212700264</updated>
+      <updated>1603216527709</updated>
     </task>
     <servers />
   </component>
@@ -79,31 +87,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603216517984">
+    <state x="527" y="116" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1603218038936">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1603216517984" />
-    <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1603216522458">
+    <state x="527" y="116" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/72.27.1294.741@72.27.1294.741" timestamp="1603218038936" />
+    <state x="313" y="27" width="802" height="741" key="new project wizard" timestamp="1603216661199">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1603216522458" />
-    <state width="1248" height="172" key="GridCell.Tab.0.center" timestamp="1603216522457">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1603216522457" />
-    <state width="1248" height="172" key="GridCell.Tab.0.left" timestamp="1603216522457">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1603216522457" />
-    <state width="1248" height="172" key="GridCell.Tab.0.right" timestamp="1603216522458">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1603216522458" />
-    <state x="313" y="27" width="802" height="741" key="new project wizard" timestamp="1603212852920">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="313" y="27" width="802" height="741" key="new project wizard/72.27.1294.741@72.27.1294.741" timestamp="1603212852920" />
+    <state x="313" y="27" width="802" height="741" key="new project wizard/72.27.1294.741@72.27.1294.741" timestamp="1603216661199" />
   </component>
 </project>
