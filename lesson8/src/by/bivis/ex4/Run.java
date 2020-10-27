@@ -1,4 +1,4 @@
-package ex4;
+package by.bivis.ex4;
 
 /*
         Текстовый файл содержит текст. После запуска программы в другой файл
@@ -16,8 +16,6 @@ package ex4;
         новый файл
  */
 
-import by.bivis.palindrome.Palindrome;
-
 import java.io.*;
 import java.util.Arrays;
 
@@ -25,7 +23,7 @@ public class Run {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("/home/bivis/IdeaProjects/TMS-QA-Courses/lesson8/src/ex4/text.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("/home/anton/IdeaProjects/TMS-QA-Courses/lesson8/src/by/bivis/ex4/text.txt"))) {
             // чтение посимвольно
             int c;
             while ((c = br.read()) != -1) {
@@ -35,28 +33,19 @@ public class Run {
             System.out.println(ex.getMessage());
         }
 
-        System.out.print(sb.toString());
-        System.out.print(Arrays.toString(TextFormater.splitBySentences(sb.toString())));
-
-        String[] sentences = TextFormater.splitBySentences(sb.toString());
-
-        StringBuilder sb2 = new StringBuilder();
-
-        //TODO Почему-то записывает всё предложения
-        for (String sentence : sentences) {
-            if (TextFormater.therePalindrome(sentence)) {
-                sb2.append(sentence);
-            } else if (TextFormater.wordCount(sentence) > 2 && TextFormater.wordCount(sentence) < 6) {
-                sb2.append(sentence);
-            }
-        }
-
-        System.out.println(sb2.toString());
-
         //Запись
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter("/home/bivis/IdeaProjects/TMS-QA-Courses/lesson8/src/ex4/textNew.txt")))
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter("/home/anton/IdeaProjects/TMS-QA-Courses/lesson8/src/by/bivis/ex4/textNew.txt")))
         {
-            bw.write(sb2.toString());
+            String[] sentences = TextFormater.splitBySentences(sb.toString());
+
+            for (String sentence : sentences) {
+                String trimmedSentence = sentence.trim();
+                if (TextFormater.therePalindrome(trimmedSentence)) {
+                    bw.write(trimmedSentence + ". ");
+                } else if (TextFormater.wordCount(trimmedSentence) > 2 && TextFormater.wordCount(trimmedSentence) < 6) {
+                    bw.write(trimmedSentence + ". ");
+                }
+            }
         }
         catch(IOException ex){
             System.out.println(ex.getMessage());

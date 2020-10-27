@@ -10,6 +10,10 @@ public class Palindrome {
     }
 
     public static boolean isPalindrome(String string) {
-        return reverseString(string.toLowerCase()).equals(string.toLowerCase());
+        if (reverseString(string.toLowerCase()).equals(string.toLowerCase()) && string.length() > 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

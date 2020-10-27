@@ -1,12 +1,11 @@
-package ex4;
+package by.bivis.ex4;
 
 import by.bivis.palindrome.Palindrome;
 
-import java.util.Arrays;
-
 public class TextFormater {
     public static int wordCount(String sentence) {
-        return (sentence.split("\\s")).length;
+        String[] count = sentence.split("\\s");
+        return count.length;
     }
 
     public static boolean therePalindrome(String sentence) {
