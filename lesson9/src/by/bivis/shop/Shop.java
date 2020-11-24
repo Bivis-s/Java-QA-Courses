@@ -3,11 +3,11 @@ package by.bivis.shop;
 import java.util.*;
 
 public class Shop {
-    private List<Item> itemsList = new ArrayList<>();
+    private final List<Item> itemsList = new ArrayList<>();
 
-    private boolean containsItemId(Item item) {  // Проверяет, содержится ли товар с таким id в списке
+    private boolean containsItemId(int itemId) {  // Проверяет, содержится ли товар с таким id в списке
         for (Item i : itemsList) {
-            if (i.getId() == item.getId()) {
+            if (i.getId() == itemId) {
                 return true;
             }
         }
@@ -15,15 +15,15 @@ public class Shop {
     }
 
     public boolean addItem(Item item) {  // Добавляет товар в список, если в нём нет товара с таким же id
-        if (!containsItemId(item)) {
+        if (containsItemId(item.getId())) {
+            return false;
+        } else {
             itemsList.add(item);
             return true;
-        } else {
-            return false;
         }
     }
 
-    public List getAllItems() {
+    public List<Item> getItemsList() {
         return itemsList;
     }
 
@@ -41,7 +41,9 @@ public class Shop {
         if (itemsList.contains(item)) {
             itemsList.set(itemsList.indexOf(item), item);
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
+
 }
